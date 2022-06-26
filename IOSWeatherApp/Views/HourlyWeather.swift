@@ -16,7 +16,6 @@ struct HourlyWeather: View {
                 ForEach(cityViewModel.weather.hourly){ weather in
                     let hour = cityViewModel.getTimeFor(timestamp: weather.dt)
                     let temp = cityViewModel.getTempFor(temp: weather.temp)
-
                     getHourlyView(hour: hour, temp: temp)
                 }
             }
