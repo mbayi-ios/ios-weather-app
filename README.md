@@ -12,11 +12,6 @@ The link attached is how the app works. [Weather App](https://share.getcloudapp.
 
 ### Screenshots capturing Different weather point
 
-![Simulator Screen Shot - iPhone 13 - 2022-06-26 at 14 09 08]()
-![Simulator Screen Shot - iPhone 13 - 2022-06-26 at 14 08 54]()
-![Simulator Screen Shot - iPhone 13 - 2022-06-26 at 14 08 43](https://user-images.githubusercontent.com/91916741/175811323-c0010497-a91d-4200-a07a-b43dc221f86e.png)
-![Simulator Screen Shot - iPhone 13 - 2022-06-26 at 14 08 33]()
-
 | Weather Forecast | screenshots |
 | ----------------- | ------------ |
 | <img src="https://user-images.githubusercontent.com/91916741/175811314-86d5ba5b-b7a0-4590-8987-0650311c6fe7.png" width="50%" /> | <img src="https://user-images.githubusercontent.com/91916741/175811324-76ddc43c-d556-4396-9e49-b3bd9e17d1b8.png" width="50%" /> |
