@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var cityViewModel = CityViewModel()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            City(cityViewModel: cityViewModel)
+            VStack{
+            MenuHeader(cityViewModel: cityViewModel)
+            }
+            .offset(y: 350)
+            .padding([.bottom, .leading, .trailing], 40)
+
+        }
     }
 }
 

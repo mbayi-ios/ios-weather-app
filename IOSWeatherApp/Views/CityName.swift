@@ -7,14 +7,20 @@
 
 import SwiftUI
 
-struct CityName: View {
+struct CityNameView: View {
+
+    var city: String
+    var date: String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(city)
+            .font(.system(size: 30, weight: .medium))
+        Text(date)
     }
 }
 
 struct CityName_Previews: PreviewProvider {
     static var previews: some View {
-        CityName()
+        CityNameView(city: "nairobi", date: "12/12/2002")
     }
 }

@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct HourlyWeather: View {
+    @ObservedObject var cityViewModel: CityViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal) {
+            HStack(spacing: 20) {
+                ForEach(cityViewModel.weather.hourly){ weather in
+                    let hour = cityViewModel.getTimeFor(timestamp: weather.dt)
+                    let temp = cityViewModel.getTempFor(temp: weather.temp)
+
+                    getHourlyView(hour: hour, temp: temp)
+                }
+            }
+        }
+    }
+
+    private func getHourlyView(hour: String, temp: String) -> some View {
+        VStack {
+            Text(hour)
+            Text("\(temp) ℃")
+        }
     }
 }
 
 struct HourlyWeather_Previews: PreviewProvider {
     static var previews: some View {
-        HourlyWeather()
+        HourlyWeather(cityViewModel: CityViewModel())
     }
 }
